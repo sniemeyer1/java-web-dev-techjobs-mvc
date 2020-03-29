@@ -17,12 +17,12 @@
             <th:block th:each ="title : ${jobs}">
                 <tr>
                      <th>
-                    <p>ID: </p>
-                    <p th:text = "'Name: ' + ${title.name}"></p>
-                    <p th:text = "'Employer: ' + ${title.employer}"></p>
-                    <p th:text = "'Location: ' + ${title.location}"></p>
-                    <p th:text = "'Position: ' + ${title.positionType}"></p>
-                    <p th:text = "'Skill: ' + ${title.coreCompetency}"></p>
+                         <p th:text = "'ID: ' + ${title.id}"></p>
+                         <p th:text = "'Name: ' + ${title.name}"></p>
+                         <p th:text = "'Employer: ' + ${title.employer}"></p>
+                         <p th:text = "'Location: ' + ${title.location}"></p>
+                         <p th:text = "'Position: ' + ${title.positionType}"></p>
+                         <p th:text = "'Skill: ' + ${title.coreCompetency}"></p>
                     </th>
                 </tr>
             </th:block>
