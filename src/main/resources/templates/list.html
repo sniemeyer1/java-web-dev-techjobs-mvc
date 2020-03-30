@@ -20,13 +20,15 @@
             <tr>
                 <!-- TODO #2: Complete the View Jobs By Category Table. -->
 
-<!--                <td>-->
-<!--                    <ul>-->
-<!--                        <li>-->
-<!--                            <a th:href="@{/list/jobs(column=${all},value=${item})}" th:text="${item}"></a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </td> &lt;!&ndash; Feel free to remove or modify this element if necessary. &ndash;&gt;-->
+                <td>
+                    <th:block>
+                    <ul>
+                        <li>
+                            <a href="/list/jobs?column=all&value=All">View All</a>                        </li>
+                    </ul>
+                    </th:block>
+                </td>
+                <!-- Feel free to remove or modify this element if necessary. -->
 
                 <td th:each="category : ${tableChoices}">
                     <ul>

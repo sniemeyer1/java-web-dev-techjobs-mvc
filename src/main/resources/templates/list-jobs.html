@@ -18,6 +18,7 @@
                 <tr>
                      <th>
                          <th:block th:each = "title : ${job}">
+                             <p th:text = "'ID: ' + ${title.id}"></p>
                              <p th:text = "'Name: ' + ${title.name}"></p>
                              <p th:text = "'Employer: ' + ${title.employer}"></p>
                              <p th:text = "'Location: ' + ${title.location}"></p>
